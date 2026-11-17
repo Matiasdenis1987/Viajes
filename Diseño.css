@@ -1,0 +1,115 @@
+body {
+  color: #333;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.site-nav {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(30, 55, 42, .85);
+}
+
+.brand-mark { display: none; }
+.navbar-brand { font-weight: bold; }
+.navbar-nav { gap: 4px; }
+.site-nav .nav-link { color: #fff; }
+
+.hero,
+.page-hero {
+  display: flex;
+  min-height: 430px;
+  align-items: end;
+  padding: 115px 0 45px;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  min-height: 540px;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(0,0,0,.58), rgba(0,0,0,.1)), url("https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Ollantaytambo%2C_Peru.jpg/1280px-Ollantaytambo%2C_Peru.jpg");
+}
+
+.about-hero { background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Urubamba_-_Valle_Sagrado_3.JPG/1280px-Urubamba_-_Valle_Sagrado_3.JPG"); }
+.experience-hero { background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://upload.wikimedia.org/wikipedia/commons/6/60/Andenes_de_Pisaq_%28vista_lateral%29.jpg"); }
+.gallery-hero { background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Salineras_de_Maras%2C_Maras%2C_Per%C3%BA%2C_2015-07-30%2C_DD_03-07_PAN.JPG/1280px-Salineras_de_Maras%2C_Maras%2C_Per%C3%BA%2C_2015-07-30%2C_DD_03-07_PAN.JPG"); }
+.contact-hero { background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Chinchero%2C_Angled_Agricultural_Terraces.jpg/1280px-Chinchero%2C_Angled_Agricultural_Terraces.jpg"); }
+
+.hero h1,
+.page-hero h1 {
+  margin-bottom: 15px;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: bold;
+}
+
+.hero h1 span { color: #e4d59a; }
+.hero-copy, .page-hero p:last-child { max-width: 550px; }
+.hero-note, .scroll-cue, .image-label { display: none; }
+.eyebrow { color: #f0d7a2; font-size: .9rem; }
+.eyebrow-dark { color: #426448; }
+.section-pad { padding: 55px 0; }
+.section-warm { background: #f3f1e9; }
+.section-title { margin-bottom: 18px; font-size: clamp(2rem, 4vw, 3rem); }
+.text-muted-custom { max-width: 600px; color: #555; }
+.text-link { color: #376044; font-weight: bold; text-decoration: underline; }
+.image-frame { overflow: hidden; }
+.image-frame img, .about-image img { width: 100%; height: 330px; object-fit: cover; }
+.welcome-image:before { display: none; }
+.section-heading { max-width: 700px; margin: 0 auto 25px; }
+
+.feature-card {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.feature-card:hover { transform: none; box-shadow: none; }
+.feature-card .card-img-top { width: 100%; height: 210px; object-fit: cover; }
+.feature-card .card-body { padding: 20px; }
+.card-kicker, .experience-tag { color: #426448; font-size: .8rem; }
+.feature-card .card-title { font-size: 1.35rem; }
+.feature-card .card-text { color: #555; }
+
+.btn-coral {
+  border: 1px solid #426448;
+  color: white;
+  background: #426448;
+}
+
+.btn-coral:hover, .btn-coral:focus { border-color: #2e4933; color: white; background: #2e4933; }
+.quote-band { padding: 40px 0; color: white; background: #426448; }
+.quote-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.quote-inner h2 { font-size: 2rem; }
+.visit-strip { padding: 12px 0; background: #f3f1e9; }
+.value-card { height: 100%; padding: 20px; border: 1px solid #ddd; background: white; }
+.calculator-card, .contact-form { padding: 24px; border: 1px solid #ddd; background: white; }
+.form-control, .form-select { border-radius: 3px; }
+.calculator-result, .form-feedback { color: #376044; }
+.gallery-item { position: relative; height: 280px; margin: 0; overflow: hidden; background: #ddd; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-item:after { position: absolute; inset: 60% 0 0; background: linear-gradient(transparent, rgba(0,0,0,.65)); content: ""; }
+.gallery-item figcaption { position: absolute; z-index: 1; bottom: 12px; left: 15px; color: white; }
+.gallery-grid .col-md-8 .gallery-item, .gallery-grid .col-md-7 .gallery-item { height: 340px; }
+.photo-credits { padding: 20px; border: 1px solid #ddd; background: #f3f1e9; font-size: .9rem; }
+.photo-credits h3 { margin-bottom: 14px; font-size: 1.1rem; }
+.photo-credit-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px 24px; margin: 0; padding: 0; list-style: none; }
+.photo-credit-list li { padding: 9px 0; border-top: 1px solid #ddd; }
+.photo-credit-source { margin: 14px 0 0; color: #555; font-size: .85rem; }
+.photo-credits a { color: #376044; }
+.contact-note { display: flex; gap: 12px; margin-top: 20px; }
+.contact-icon { color: #426448; }
+
+@media (max-width: 767.98px) {
+  .navbar-collapse { margin-top: 10px; padding: 10px; background: #333; }
+  .hero { min-height: 500px; }
+  .section-pad { padding: 40px 0; }
+  .quote-inner { align-items: flex-start; flex-direction: column; }
+  .gallery-item, .gallery-grid .col-md-8 .gallery-item, .gallery-grid .col-md-7 .gallery-item { height: 250px; }
+  .calculator-card, .contact-form { padding: 18px; }
+}
